@@ -379,7 +379,7 @@ func streamToBytes(r io.Reader) (b []byte, err error) {
 	return buffer.Bytes(), nil
 }
 
-func (e *Email) bytesNoAttachments() ([]byte, error) {
+func (e *Email) BytesNoAttachments() ([]byte, error) {
 	// TODO: better guess buffer size
 	buff := bytes.NewBuffer(make([]byte, 0, 4096))
 
